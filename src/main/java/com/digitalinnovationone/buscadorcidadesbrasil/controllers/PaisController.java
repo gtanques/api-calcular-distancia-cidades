@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/paises")
@@ -26,6 +23,12 @@ public class PaisController {
         PageRequest pageRequest = PageRequest.of(page, size);
         Page<Pais> list = paisServices.findAll(pageRequest);
         return ResponseEntity.ok().body(list);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Pais> findById(@PathVariable Long id){
+        Pais pais = paisServices.findById(id);
+        return ResponseEntity.ok().body(pais);
     }
 
 }
