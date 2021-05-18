@@ -1,8 +1,6 @@
 package com.digitalinnovationone.buscadorcidadesbrasil.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,11 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-@Entity
-@Table(name="pais")
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name="pais")
 public class Pais implements Serializable {
     @Id
     private Long id;
