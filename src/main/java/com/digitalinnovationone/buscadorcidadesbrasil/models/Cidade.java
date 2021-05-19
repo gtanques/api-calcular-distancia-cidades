@@ -17,8 +17,8 @@ public class Cidade implements Serializable {
     private Long id;
     private String nome;
     private String ibge;
-    private Long latitude;
-    private Long longitude;
+    private String latitude;
+    private String longitude;
 
     @ManyToOne
     @JoinColumn(name = "uf", referencedColumnName = "id")
