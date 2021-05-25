@@ -37,7 +37,7 @@ public class CidadeController {
     @GetMapping("/distancia/{origemId}/{destinoId}")
     public ResponseEntity<DistanciaEntreCidadesDTO> distanciaEntreCidades(@PathVariable Long origemId, @PathVariable Long destinoId){
         DecimalFormat df = new DecimalFormat("#,###.00");
-        String distancia = df.format(cidadeServices.distanciaEntreCidades(origemId, destinoId)) + " mi";
+        String distancia = String.format("%.2f", cidadeServices.distanciaEntreCidades(origemId, destinoId));
         DistanciaEntreCidadesDTO distanciaDTO = new DistanciaEntreCidadesDTO(origemId, destinoId, distancia);
         return ResponseEntity.ok().body(distanciaDTO);
     }
