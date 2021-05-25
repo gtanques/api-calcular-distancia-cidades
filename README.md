@@ -1,6 +1,5 @@
 ## API Cidades e Estados Brasil
-<img src="https://img.shields.io/badge/JAVA-Spring%20Boot-green"/>
-<img src="https://img.shields.io/badge/BD-PostgreSQL-blue"/>
+<img src="https://img.shields.io/badge/JAVA-Spring%20Boot-green"/><img src="https://img.shields.io/badge/BD-PostgreSQL-blue"/><img src="https://img.shields.io/badge/Lombok-red"/>
 
 ### - [Configuração](https://github.com/gtanques/buscador-cidades-brasil/tree/main/src/main/resources)
 ### - [Criar tabelas e alimentar banco](https://github.com/gtanques/cidades-estados-brasil-sql)
