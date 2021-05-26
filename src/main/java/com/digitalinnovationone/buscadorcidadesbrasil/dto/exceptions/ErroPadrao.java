@@ -1,4 +1,4 @@
-package com.digitalinnovationone.buscadorcidadesbrasil.controllers.exceptions;
+package com.digitalinnovationone.buscadorcidadesbrasil.dto.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

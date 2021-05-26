@@ -1,5 +1,6 @@
 package com.digitalinnovationone.buscadorcidadesbrasil.controllers.exceptions;
 
+import com.digitalinnovationone.buscadorcidadesbrasil.dto.exceptions.ErroPadrao;
 import com.digitalinnovationone.buscadorcidadesbrasil.services.exceptions.ExceptionPersonalizada;
 import com.digitalinnovationone.buscadorcidadesbrasil.services.exceptions.NaoEncontrado;
 import org.springframework.http.HttpStatus;

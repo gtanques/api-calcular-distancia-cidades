@@ -3,20 +3,24 @@
 
 ### - [Configuração](https://github.com/gtanques/buscador-cidades-brasil/tree/main/src/main/resources)
 ### - [Criar tabelas e alimentar banco](https://github.com/gtanques/cidades-estados-brasil-sql)
+### - [Extensões PostgreSQL](https://www.postgresql.org/docs/current/earthdistance.html) 
+    CREATE EXTENSION cube; 
+    CREATE EXTENSION earthdistance;
+
 ### Testes
 #### País
-    http://localhost:8080/paises
-    http://localhost:8080/paises/{id} 
+    GET - http://localhost:8080/paises
+    GET - http://localhost:8080/paises/{id} 
 #### Estado
-    http://localhost:8080/estados
-    http://localhost:8080/estados/{id}
+    GET - http://localhost:8080/estados
+    GET - http://localhost:8080/estados/{id}
     
 #### Cidade
-    http://localhost:8080/cidades
-    http://localhost:8080/cidades/{id}
+    GET - http://localhost:8080/cidades
+    GET - http://localhost:8080/cidades/{id}
 
 ##### Cálculo distância aproximada em milha 
-    http://localhost:8080/cidades/distancia/{idOrigem}/{idDestino}
+    GET - http://localhost:8080/cidades/distancia/{idOrigem}/{idDestino}
 
 ### - Referência 
 [@andrelugomes - Digital Innovation One](https://github.com/andrelugomes/digital-innovation-one/tree/master/cities-api)
