@@ -1,4 +1,4 @@
-## API Cidades e Estados Brasil
+## Calcula a distância entre as cidades do Brasil
 <img src="https://img.shields.io/badge/JAVA-Spring%20Boot-green"/><img src="https://img.shields.io/badge/BD-PostgreSQL-blue"/><img src="https://img.shields.io/badge/Lombok-red"/>
 
 ### - [Configuração](https://github.com/gtanques/buscador-cidades-brasil/tree/main/src/main/resources)
